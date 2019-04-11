@@ -1,6 +1,30 @@
 [
     {
-        "name":"",
-        "url":""
+        "name":"quiénes somos",
+        "url":"#"
+    },
+    {
+        "name":"qué hacemos",
+        "url":"#"
+    },
+    {
+        "name":"cómo lo hacemos",
+        "url":"#"
+    },
+    {
+        "name":"donaciones",
+        "url":"#"
+    },
+    {
+        "name":"comunidades",
+        "url":"#"
+    },
+    {
+        "name":"voluntariado",
+        "url":"#"
+    },
+    {
+        "name":"contacto",
+        "url":"#"
     }
 ]

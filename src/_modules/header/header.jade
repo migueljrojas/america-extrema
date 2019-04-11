@@ -1,2 +1,14 @@
 header.header
-    
+    .container
+        .header__container
+            .header__logo
+                img(src="/images/logo.png")
+            nav.header__nav
+                .header__list
+                    each item in site.data.header
+                        li
+                            a(href=item.url)=item.name
+        .header__hamburguer
+            span
+            span
+            span

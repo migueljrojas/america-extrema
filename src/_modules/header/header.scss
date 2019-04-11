@@ -1,6 +1,91 @@
 .header {
+    @include trans;
 
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    height: 10vh;
     $h: &;
+
+    &.-changeColor {
+        background: $red;
+    }
+
+    &__container {
+        width: 100%;
+        height: 10vh;
+
+        @include mq(md) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__logo {
+        @include trans;
+        height: 80%;
+
+        img {
+            width: auto;
+            height: 100%;
+        }
+
+        &.-changeColor {
+            filter: brightness(1500%);
+        }
+    }
+
+    &__nav {
+        @include trans;
+        
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        height: 100vh;
+        left: 0;
+        transform: translateX(-100%);
+        opacity: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include mq(md) {
+            position: relative;
+            opacity: 1;
+            transform: translateY(0);
+            justify-content: flex-end;
+            height: auto;
+        }
+
+        &.-open {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    &__list {
+        list-style: none;
+
+        @include mq(md) {
+            display: flex;
+        }
+
+        li {
+            @include mq(md) {
+                margin-left: 30px;
+            }
+        }
+
+        a {
+            text-transform: uppercase;
+            color: $white;
+            font-size: 14px;
+            font-weight: 900;
+        }
+    }
 
     &__hamburguer {
         cursor: pointer;
@@ -11,8 +96,12 @@
         right: 32px;
         top: 30px;
 
+        @include mq(md) {
+            display: none;
+        }
+
         span {
-            background-color: $mainColor;
+            background-color: $black;
             border-radius: 2px;
             content: '';
             display: block;
@@ -49,7 +138,9 @@
         }
 
         #{$h}__nav {
-
+            transform: translateX(0);
+            background: $red;
+            opacity: 1;
         }
     }
 }
