@@ -1,3 +1,70 @@
 .footer {
-    
+    &__donaciones-info {
+        padding: 40px 0;
+        background: $red;
+        text-align: center;
+    }
+
+    &__text {
+        color: $white;
+    }
+
+    &__bottom {
+        background: $black;
+    }
+
+    &__contact {
+        padding: 40px 0;
+
+        @include mq(sm) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__mail {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+
+        @include mq(sm) {
+            justify-content: flex-start;
+            margin-bottom: 0;
+        }
+
+        i {
+            margin-right: 20px;
+            color: $white;
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+        p {
+            color: $white;
+            margin: 0;
+        }
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            margin: 0 20px;
+
+            @include mq(sm) {
+                margin: 0;
+                margin-left: 40px;
+            }
+        }
+
+        i {
+            color: $white;
+            font-size: 30px;
+        }
+    }
 }
