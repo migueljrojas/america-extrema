@@ -7,38 +7,43 @@
     height: 10vh;
     $h: &;
 
-    &.-changeColor {
+    &.-scroll-change-color {
         background: $red;
     }
 
     &__container {
         width: 100%;
         height: 10vh;
+        display: flex;
+        align-items: center;
 
         @include mq(md) {
-            display: flex;
             justify-content: space-between;
-            align-items: center;
         }
     }
 
     &__logo {
         @include trans;
         height: 80%;
+        z-index: 2000;
 
         img {
             width: auto;
             height: 100%;
         }
 
-        &.-changeColor {
+        &.-scroll-change-color {
+            filter: brightness(1500%);
+        }
+
+        &.-nav-change-color {
             filter: brightness(1500%);
         }
     }
 
     &__nav {
         @include trans;
-        
+
         position: absolute;
         top: 0;
         bottom: 0;
@@ -93,8 +98,8 @@
         height: 25px;
         margin: auto;
         position: absolute;
-        right: 32px;
-        top: 30px;
+        right: 25px;
+        top: 22px;
 
         @include mq(md) {
             display: none;

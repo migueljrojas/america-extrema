@@ -74,6 +74,10 @@
             padding: 100px 0;
         }
 
+        &--gray {
+            background: $lightGray;
+        }
+
         &__title {
             color: $white;
             margin-top: 0;
@@ -90,6 +94,149 @@
         &__text {
             color: $white;
             text-align: center;
+
+            &--dark {
+                color: $darkGray;
+                text-align: left;
+            }
         }
     }
+
+    &__que-hacemos {
+        &__container {
+            width: 100%;
+            height: 80vh;
+            display: flex;
+            position: relative;
+        }
+
+        &__content {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        &__map-container {
+            width: 100%;
+            height: 80vh;
+            // height: 180vh;
+            // background-size: 20%;
+            position: absolute;
+            background-image: url('/images/map.svg');
+            background-repeat: no-repeat;
+            background-position: right center;
+            background-size: contain;
+            background-attachment: fixed;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        &__wrapper {
+        }
+    }
+
+    &__como-lo-hacemos,
+    &__transporte {
+        background: $lightGray;
+        display: flex;
+
+        &__image {
+            width: 50%;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    }
+
+    &__transporte {
+        display: flex;
+        background: $lightGray;
+
+        &__image {
+            width: 50%;
+        }
+    }
+
+    &__donaciones {
+        background: $red;
+        display: flex;
+        padding: 100px 0;
+
+        &__image {
+            width: 50%;
+            position: relative;
+
+            img {
+                position: absolute;
+                top: 50%;
+                left:  50%;
+                transform: translate3d(-50%, -50%, 0);
+            }
+        }
+    }
+
+    &__comunidades {
+        display: flex;
+
+        &__image {
+            width: 50%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    &__voluntariado {
+        background: $lightGray;
+        display: flex;
+
+        &__image {
+            width: 50%;
+            
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    &__timeline {
+        .col--left {
+            border-left: 3px solid $red;
+        }
+    }
+}
+
+.bt-pseudo-col {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &--right {
+        justify-content: flex-start;
+    }
+}
+
+.bt-container {
+    width: 100%;
+    max-width: 585px;
+    padding-left: 15px;
+    padding-right: 80px;
+
+    &--right {
+        padding-left: 80px;
+        padding-right: 15px;
+    }
+}
+
+.-text-right {
+    text-align: right;
 }

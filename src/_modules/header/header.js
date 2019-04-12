@@ -11,17 +11,18 @@ var Header = function() {
     menuOpen.on('click', function(){
         header.toggleClass('-open');
         body.toggleClass('-hideOverflow');
+        logo.toggleClass('-nav-change-color');
     });
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > 1) {
-            header.addClass('-changeColor');
-            logo.addClass('-changeColor');
+            header.addClass('-scroll-change-color');
+            logo.addClass('-scroll-change-color');
         }
 
         if ($(this).scrollTop() < 1) {
-            header.removeClass('-changeColor');
-            logo.removeClass('-changeColor');
+            header.removeClass('-scroll-change-color');
+            logo.removeClass('-scroll-change-color');
         }
     });
 };
