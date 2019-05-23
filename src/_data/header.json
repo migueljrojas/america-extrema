@@ -1,30 +1,30 @@
 [
     {
         "name":"quiénes somos",
-        "url":"#"
+        "url":"#quienes-somos"
     },
     {
         "name":"qué hacemos",
-        "url":"#"
+        "url":"#que-hacemos"
     },
     {
         "name":"cómo lo hacemos",
-        "url":"#"
+        "url":"#como-lo-hacemos"
     },
     {
         "name":"donaciones",
-        "url":"#"
+        "url":"#donaciones"
     },
     {
         "name":"comunidades",
-        "url":"#"
+        "url":"#comunidades"
     },
     {
         "name":"voluntariado",
-        "url":"#"
+        "url":"#voluntariado"
     },
     {
         "name":"contacto",
-        "url":"#"
+        "url":"mailto:axsolidaria@gmail.com"
     }
 ]

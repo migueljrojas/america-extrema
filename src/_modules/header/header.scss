@@ -1,11 +1,11 @@
 .header {
+    $h: &;
     @include trans;
 
     position: fixed;
     width: 100%;
     z-index: 1000;
     height: 10vh;
-    $h: &;
 
     &.-scroll-change-color {
         background: $red;
