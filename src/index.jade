@@ -32,28 +32,35 @@ block content
             .bt-pseudo-col.bt-pseudo-col--right
                 .bt-container.bt-container--right
                     h3.home__como-lo-hacemos__subtitle.-subtitle cómo lo hacemos
-                    h2.home__como-lo-hacemos__title.-title Conseguimos los filtros a través de la Fundación Waves4Water, cuyo objetivo es proveer de filtros potabilizadores a proyectos independientes solidarios.
+                    h2.home__como-lo-hacemos__title.-title 
+                        |Conseguimos los filtros a través de la Fundación 
+                        a(href="http://www.wavesforwater.org/courier/amrica-extrema-solidaria" target="_blank") Waves4Water
+                        |, cuyo objetivo es proveer de filtros potabilizadores a proyectos independientes solidarios.
                     p.home__como-lo-hacemos__text A través de las donaciones de las personas que visitan su sitio web www.wavesforwater.org en el que pueden a elegir entre varios proyectos diferentes alrededor del mundo.
-                    p.home__como-lo-hacemos__text Los alimentos los recolectados en distintos puntos o bancos de donación y también de personas particulares y empresas.
+                    p.home__como-lo-hacemos__text Los alimentos son recolectados en distintos puntos o bancos de donación y también de personas particulares y empresas.
                 
         section.home__transporte
             .bt-pseudo-col
                 .bt-container
-                    h3.home__transporte__subtitle.-subtitle en qué nos movemos
+                    h3.home__transporte__subtitle.-subtitle Cómo nos movemos
                     h2.home__transporte__title.-title Este viaje y misión humanitaria, nos llevará por algunos de los caminos más duros del continente.
                     p.home__transporte__text Compramos una camioneta doble cabina y doble tracción para llevar un camper donde podamos vivir y un trailer donde cargamos una moto, un generador y varias herramientas, materiales y alimentos para ser utilizados en las distintas comunidades a las que asistiremos.
             .home__transporte__image
                 img(src="/images/truck.jpg")
                 
         section#donaciones.home__donaciones
-            .home__donaciones__image
-                img(src="/images/truck-icon.png")
-            .bt-pseudo-col.bt-pseudo-col--right
-                .bt-container.bt-container--right.-text-right
-                    h3.home__donaciones__subtitle.-subtitle.-subtitle--white donaciones
-                    h2.home__donaciones__title.-title.-title--white A través de las donaciones monetarias que recibimos de personas, empresas o corporaciones en nuestra cuenta bancaria y cuenta de PayPal.
-                    p.home__donaciones__text También vendemos remeras del América Extrema Solidaria Tour Latinoamérica para costear parte de la gasolina.
-                    a.home__donaciones__button.-button.-button--light(href="#donar") donar
+            h3.home__donaciones__subtitle.-subtitle.-subtitle--white Nos financiamos con nuestro dinero y a través  de las donaciones...
+            .home__donaciones__wrapper
+                .home__donaciones__image
+                    img(src="/images/truck-icon.png")
+                .bt-pseudo-col.bt-pseudo-col--right
+                    .bt-container.bt-container--right.-text-right
+                        //- h3.home__donaciones__subtitle.-subtitle.-subtitle--white donaciones
+                        h2.home__donaciones__title.-title.-title--white A través de las donaciones monetarias que recibimos de personas, empresas o corporaciones en nuestra cuenta bancaria y cuenta de PayPal.
+                        p.home__donaciones__text También vendemos remeras del América Extrema Solidaria Tour Latinoamérica para costear parte de la gasolina.
+                        p.home__donaciones__text
+                            a(href="/images/certificate.jpg" target="_blank") Certificado de organización sin fines de lucro
+                        a.home__donaciones__button.-button.-button--light(href="#donar") donar
         
         section.home__insterstitial.home__insterstitial--gray
             .container
@@ -62,7 +69,7 @@ block content
         section#comunidades.home__comunidades
             .bt-pseudo-col
                 .bt-container
-                    h3.home__comunidades__subtitle.-subtitle sección de comunidades
+                    h3.home__comunidades__subtitle.-subtitle selección de comunidades
                     h2.home__comunidades__title.-title Elegimos una comunidad a la cual podemos ayudar con nuestras herramientas y preparación y coordinamos la acción en concreto.
                     p.home__comunidades__text Empezando por algunas comunidades de Méjico entramos en contacto con sus principales referentes para lograr entender sus necesidades más urgentes (agua potable, vivienda, alimentación, salud)
             .home__comunidades__image
